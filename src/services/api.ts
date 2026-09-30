@@ -1,4 +1,4 @@
-import type { Order } from "../types/order";
+import type { Order } from '../types/order';
 
 const API_URL = 'http://localhost:8080';
 

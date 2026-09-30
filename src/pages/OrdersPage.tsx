@@ -24,10 +24,7 @@ export function OrdersPage() {
     loadOrders();
 
     const disconnect = connectToOrders((newOrder) => {
-      setOrders((currentOrders) => [
-        ...currentOrders,
-        newOrder
-      ]);
+      setOrders((currentOrders) => [...currentOrders, newOrder]);
     });
 
     return disconnect;

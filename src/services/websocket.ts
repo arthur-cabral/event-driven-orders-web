@@ -3,9 +3,7 @@ import type { Order } from '../types/order';
 
 const WS_URL = 'ws://localhost:8080/ws';
 
-export function connectToOrders(
-  onOrderReceived: (order: Order) => void
-) {
+export function connectToOrders(onOrderReceived: (order: Order) => void) {
   const client = new Client({
     brokerURL: WS_URL,
 
